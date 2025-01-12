@@ -3,434 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Enhanced SEO Meta Tags -->
-    <title>Scripters Collective | Innovative Open-Source & Blockchain Development</title>
-    <meta name="description" content="Join Scripters Collective, a global hub for cutting-edge open-source and blockchain projects. Collaborate with top developers, innovate, and shape the future of technology.">
-    <meta name="keywords" content="Scripters Collective, open-source development, blockchain projects, developer community, tech innovation, coding collaboration, decentralized applications">
-    <meta name="author" content="Scripters Collective">
+    <title>Scripters Collective | Innovative Web3 & Blockchain Development</title>
+    <meta name="description" content="Join Scripters Collective, a global hub for cutting-edge Web3, blockchain, and open-source projects. Collaborate with top developers and shape the future of decentralized technology.">
+    <meta name="keywords" content="Scripters Collective, Web3, blockchain, open-source, DeFi, NFT, smart contracts, decentralized applications">
     <link rel="canonical" href="https://scripterscollective.org/">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://scripterscollective.org/">
-    <meta property="og:title" content="Scripters Collective | Innovate in Open-Source & Blockchain">
-    <meta property="og:description" content="Join our global tech community to collaborate on groundbreaking open-source and blockchain projects. Innovate, learn, and shape the future of technology with Scripters Collective.">
+    <meta property="og:title" content="Scripters Collective | Web3 Innovation Hub">
+    <meta property="og:description" content="Collaborate on groundbreaking Web3 and blockchain projects. Join Scripters Collective and drive the future of decentralized tech!">
     <meta property="og:image" content="https://scripterscollective.org/images/og-banner.webp">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://scripterscollective.org/">
-    <meta property="twitter:title" content="Scripters Collective | Open-Source & Blockchain Innovation Hub">
-    <meta property="twitter:description" content="Collaborate with top developers worldwide on cutting-edge open-source and blockchain projects. Join Scripters Collective and drive tech innovation!">
-    <meta property="twitter:image" content="https://scripterscollective.org/images/twitter-banner.webp">
-
-    <!-- Favicon -->
+    <meta property="og:url" content="https://scripterscollective.org/">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Preload Critical Assets -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style">
-    <link rel="preload" href="/css/main.css" as="style">
-    <link rel="preload" href="/js/animations.js" as="script">
-
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
-
-    <style>
-        :root {
-            --primary-color: #4f46e5;
-            --secondary-color: #38bdf8;
-            --accent-color: #f472b6;
-            --background-dark: #0f172a;
-            --background-light: #1e293b;
-            --text-color: #ffffff;
-            --text-muted: #94a3b8;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: var(--background-dark);
-            color: var(--text-color);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            padding: 2rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-color);
-            text-decoration: none;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin-left: 2rem;
-        }
-
-        nav ul li a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 6rem 0;
-            position: relative;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s ease forwards 0.5s;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s ease forwards 0.7s;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--accent-color);
-            color: var(--text-color);
-            padding: 0.8rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s ease forwards 0.9s;
-        }
-
-        .cta-button:hover {
-            background: var(--primary-color);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Projects Section */
-        .projects {
-            padding: 6rem 0;
-            background: var(--background-light);
-        }
-
-        .projects h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: var(--secondary-color);
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background: var(--background-dark);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .project-info {
-            padding: 1.5rem;
-        }
-
-        .project-info h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--secondary-color);
-        }
-
-        .project-info p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        .project-link {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background: var(--primary-color);
-            color: var(--text-color);
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .project-link:hover {
-            background: var(--secondary-color);
-        }
-
-        /* Community Section */
-        .community {
-            padding: 6rem 0;
-            text-align: center;
-        }
-
-        .community h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: var(--secondary-color);
-        }
-
-        .community-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .community-card {
-            background: var(--background-light);
-            padding: 2rem;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .community-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .community-card i {
-            font-size: 3rem;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-        }
-
-        .community-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--secondary-color);
-        }
-
-        .community-card p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--background-light);
-            padding: 3rem 0;
-            text-align: center;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            margin: 0 1rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--secondary-color);
-        }
-
-        .social-icons a {
-            color: var(--text-muted);
-            font-size: 1.5rem;
-            margin: 0 0.5rem;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-            100% {
-                transform: translateY(0px);
-            }
-        }
-
-        .floating {
-            animation: float 6s ease-in-out infinite;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav ul {
-                margin-top: 1rem;
-            }
-
-            nav ul li {
-                margin: 0 1rem;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .community-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-content {
-                flex-direction: column;
-            }
-
-            .footer-links, .social-icons {
-                margin-top: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
+        <nav>
+            <div class="container">
                 <a href="/" class="logo">Scripters Collective</a>
-                <nav>
-                    <ul>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#community">Community</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="hero">
             <div class="container">
-                <h1>Innovate with Open-Source & Blockchain</h1>
-                <p>Join our global community of developers shaping the future of technology through collaboration and innovation.</p>
+                <h1>Innovate in the Web3 Era</h1>
+                <p>Join our global collective of developers shaping the future of decentralized technology.</p>
                 <a href="#projects" class="cta-button">Explore Projects</a>
             </div>
+            <div id="hero-background"></div>
         </section>
 
-        <section id="projects" class="projects">
+        <section id="projects">
             <div class="container">
-                <h2>Our Projects</h2>
+                <h2>Our Web3 Projects</h2>
                 <div class="project-grid">
                     <div class="project-card">
-                        <img src="/images/flash-usdt.webp" alt="Flash USDT Project">
-                        <div class="project-info">
-                            <h3>Flash USDT</h3>
-                            <p>Instant cryptocurrency transactions with USDT on the blockchain.</p>
-                            <a href="#" class="project-link">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="/images/defi-platform.webp" alt="DeFi Platform">
-                        <div class="project-info">
-                            <h3>DeFi Platform</h3>
-                            <p>Decentralized finance solutions for lending and borrowing crypto assets.</p>
-                            <a href="#" class="project-link">Explore</a>
-                        </div>
+                        <img src="/images/defi-exchange.webp" alt="DeFi Exchange Project">
+                        <h3>DeFi Exchange</h3>
+                        <p>A decentralized exchange for seamless token swaps and liquidity provision.</p>
+                        <a href="#" class="project-link">Learn More</a>
                     </div>
                     <div class="project-card">
                         <img src="/images/nft-marketplace.webp" alt="NFT Marketplace">
-                        <div class="project-info">
-                            <h3>NFT Marketplace</h3>
-                            <p>Create, buy, and sell unique digital assets on our NFT platform.</p>
-                            <a href="#" class="project-link">Discover</a>
-                        </div>
+                        <h3>NFT Marketplace</h3>
+                        <p>Create, buy, and sell unique digital assets on our decentralized NFT platform.</p>
+                        <a href="#" class="project-link">Explore</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="/images/dao-governance.webp" alt="DAO Governance Platform">
+                        <h3>DAO Governance</h3>
+                        <p>A comprehensive platform for decentralized autonomous organization management.</p>
+                        <a href="#" class="project-link">Discover</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="community" class="community">
+        <section id="community">
             <div class="container">
-                <h2>Join Our Community</h2>
+                <h2>Join Our Web3 Community</h2>
                 <div class="community-grid">
                     <div class="community-card">
-                        <i class="fas fa-code floating"></i>
+                        <i class="icon-collaborate"></i>
                         <h3>Collaborate</h3>
-                        <p>Work with talented developers from around the world on exciting projects.</p>
+                        <p>Work with talented developers worldwide on cutting-edge Web3 projects.</p>
                     </div>
                     <div class="community-card">
-                        <i class="fas fa-graduation-cap floating"></i>
+                        <i class="icon-learn"></i>
                         <h3>Learn</h3>
-                        <p>Expand your skills through workshops, tutorials, and hands-on project experience.</p>
+                        <p>Expand your blockchain and Web3 skills through workshops and hands-on experience.</p>
                     </div>
                     <div class="community-card">
-                        <i class="fas fa-lightbulb floating"></i>
+                        <i class="icon-innovate"></i>
                         <h3>Innovate</h3>
-                        <p>Contribute to cutting-edge technologies and shape the future of open-source and blockchain.</p>
+                        <p>Contribute to the future of decentralized technologies and shape the Web3 landscape.</p>
                     </div>
                 </div>
             </div>
@@ -446,22 +102,15 @@
                     <a href="/contact">Contact Us</a>
                 </div>
                 <div class="social-icons">
-                    <a href="https://github.com/scripterscollective" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/scripterscollective" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                    <a href="https://t.me/ScriptersCollective" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/scripterscollective" target="_blank" rel="noopener noreferrer"><i class="icon-github"></i></a>
+                    <a href="https://twitter.com/scripterscollective" target="_blank" rel="noopener noreferrer"><i class="icon-twitter"></i></a>
+                    <a href="https://t.me/ScriptersCollective" target="_blank" rel="noopener noreferrer"><i class="icon-telegram"></i></a>
                 </div>
             </div>
             <p>&copy; 2025 Scripters Collective. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-
-    <!-- Main JavaScript file -->
-    <script src="/js/main.js" defer></script>
-
-    <!-- Animations JavaScript file -->
-    <script src="/js/animations.js" defer></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
